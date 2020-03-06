@@ -422,7 +422,9 @@ select{
 .form_cadastro .campo:nth-child(10) button{
     margin: auto;
 }
-
+header .fa-bars{
+    display: none;
+}
 /* Início Responsividade*/
 /* 1200px */
 
@@ -475,3 +477,36 @@ select{
         margin-top: 0.5em;
     }
 }/*Fim Media Query 800px*/
+/*Mobile*/
+@media(max-width:460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header .container div a{
+        margin-left: 3em;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        left: 0;
+        width: 100%;
+        background-color: var(--purple);
+        display: none;
+    }
+    #menu ul{
+        flex-direction: column;
+        height: 350px;
+        margin-left: 1em;
+    }
+    #menu a{
+        display: block;
+        padding: 0.5em 0;
+    }
+}
